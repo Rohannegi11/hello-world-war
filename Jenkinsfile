@@ -4,7 +4,7 @@ pipeline{
         maven '3.8.1'
     }
     stages{
-        stage('clean and install'){
+        stage('generate war file'){
             steps{
                 sh 'mvn clean package'
             }
